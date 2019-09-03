@@ -1,24 +1,16 @@
-# README
+## BlackMountain
+https://black-mountain.com.ar
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome, this is our official repository for our website.
 
-Things you may want to cover:
+## How to set up
+Rename `.env.sample` to `.env`. Do not commit/push this file into the repo.
 
-* Ruby version
+```sh
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose run web rake db:create
+$ docker-compose run web rails db:migrate
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Done!, you can now go to http://localhost.
