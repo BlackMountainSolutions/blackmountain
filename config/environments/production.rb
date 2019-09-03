@@ -91,4 +91,15 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: ENV.fetch("EMAIL_ADDRESS"),
+    port: 587,
+    domain: ENV.fetch("DOMAIN"),
+    user_name: ENV.fetch("EMAIL_USERNAME"),
+    password: ENV.fetch("EMAIL_PASSWORD"),
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
 end
