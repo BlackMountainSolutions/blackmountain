@@ -5,6 +5,7 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:
+    restart: always
     env_file:
       - .env
     build: .
