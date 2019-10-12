@@ -27,18 +27,6 @@ class Rack::Attack
     throttle('req/ip', limit: 300, period: 5.minutes) do |req|
         req.ip # unless req.path.start_with?('/assets')
     end
-  
-    ### Prevent Many Contacts ###
-    
-    # Another common method of attack is to use a swarm of computers with
-    # different IPs to try brute-forcing a password for a specific account.
-  
-    # Throttle POST requests to any POST by IP address
-    #
-    # Key: "rack::attack:#{Time.now.to_i/:period}:logins/ip:#{req.ip}"
-    throttle('contact/ip', limit: 5, period: 20.seconds) do |req|
-        req.ip if req.post?
-    end
     
     ### Custom Throttle Response ###
   
