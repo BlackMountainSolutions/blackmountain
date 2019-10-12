@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'recaptcha'
 
 gem 'secure_headers'
+
+gem 'rack-attack'
