@@ -4,23 +4,63 @@ body {
     cursor: default;
 }
 
+.background-credits {
+    position: absolute;
+    color: white !important;
+    text-shadow: 0 0 2px black;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+    font-style: italic;
+}
+
+.background-credits a {
+    color: white;
+}
+
 .navbar {
     background-color: #11252c;
 }
 
 .header {
+    position: relative;
     height: 650px;
-    background-image: url('<%= image_path 'backgrounds/header-background.jpg' %>') !important;
+    /*background-image: url('<%= image_path 'backgrounds/header-background.jpg' %>') !important;*/
+    background-image: url('<%= image_path 'backgrounds/christmas.jpg' %>') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+.santa-animation {
+    transition: all 250ms;
+}
+
+.santa-animation:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
 .header-title {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: bold;
     color: white;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.header-box {
+    display: block;
+    text-decoration: none !important;
+    padding: 50px;
+    padding-left: 200px;
+    margin: 30px 0;
+    background-image: url('<%= image_path 'backgrounds/gift.jpg' %>');
+    background-size: cover;
+    border-left: 5px solid #d41f26;
+    transition: all 250ms;
+}
+
+.header-box:hover {
+    transform: scale(1.05);
 }
 
 .header-how-button,
@@ -29,7 +69,6 @@ body {
     border-width: 2px;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -38,7 +77,6 @@ body {
 .access-dashboard-button:not(:disabled):not(.disabled):active {
     background-color: #ff6c3b;
     border-color: #ff6c3b;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -131,4 +169,13 @@ body {
 
 .btn-orange:hover {
     font-weight: bold;
+}
+
+.already-working-with-us {
+    background: linear-gradient(45deg, #319a6e, #aad4ff);
+    color: white;
+}
+
+.already-working-with-us a {
+    color: #c3ffc3 !important;
 }
