@@ -8,8 +8,8 @@ SecureHeaders::Configuration.default do |config|
     config.csp.default_src = %w('none')
     config.csp.frame_src =  %w(*.google.com)
     config.csp.base_uri = %w('self')
-    config.csp.script_src = %w('self' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com *.cloudflare.com *.bootstrapcdn.com *.recaptcha.net *.gstatic.com *.googleapis.com *.google.com)
-    config.csp.style_src = %w('self' *.bootstrapcdn.com *.googleapis.com)
+    config.csp.script_src = %w('self' 'unsafe-inline' *.fontawesome.com *.google-analytics.com *.googletagmanager.com *.cloudflare.com *.bootstrapcdn.com *.recaptcha.net *.gstatic.com *.googleapis.com *.google.com)
+    config.csp.style_src = %w('self' *.fontawesome.com *.bootstrapcdn.com *.googleapis.com)
     config.csp.frame_ancestors = %w('none')
     config.csp.form_action = %w('self')
     config.csp.block_all_mixed_content = true

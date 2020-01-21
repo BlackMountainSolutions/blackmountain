@@ -1,0 +1,21 @@
+<section class="section contact-us" id="contact-us">
+    <div class="abstract-background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-5">
+                    <h1 class="mb-0"><strong class="title">Get in touch</strong></h1>
+                    <h4>We would love to hear from you!</h4>
+                </div>
+                <ul class="list-unstyled">
+                    <li class="media border p-5 mb-3 bg-white rounded">
+                        <%= image_tag "icons/icon-contact-64.png", class: "mr-4" %>
+                        <div class="media-body">
+                            <%= render 'contacts/form', contact: @contact %>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

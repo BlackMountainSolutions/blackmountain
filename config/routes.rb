@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :contacts, :only => [:create]
-  get "welcome/index", as: 'welcome_index'
-  root "welcome#index"
+  get '/', as: 'welcome_index', to: 'welcome#index'
+  root 'welcome#index'
 end
