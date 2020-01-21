@@ -56,8 +56,10 @@ body {
     line-height: 55px;
 }
 
-.section {
-    
+@media (max-width: 390px) {
+    .header-content h1 {
+        font-size: 48px;
+    }
 }
 
 .section.what-do-we-do {
@@ -87,6 +89,13 @@ body {
     font-size: 28px;
 }
 
+@media (max-width: 500px) {
+    .section.why-us {
+        padding: 50px;
+        font-size: 24px;
+    }
+}
+
 .section.get-in-touch {
     font-size: 14px;
     border-top: 1px solid #d2d8e2;
@@ -105,19 +114,8 @@ body {
     color: #112e54;
 }
 
-.circular-icon-container {
-    border-radius: 100%;
-    padding: 68px;
-    width: 200px;
-    margin: 0 auto;
-}
-
 .what-do-we-do-icon {
     background-color: #dcf9ff;
-}
-
-.black-mountain-icon {
-    background-color: white;
 }
 
 .btn-nav-outline {
@@ -154,19 +152,6 @@ body {
     background-color: #ff6c3b;
     border-color: #ff6c3b;
     color: white;
-}
-
-.btn-orange:hover {
-    font-weight: bold;
-}
-
-.already-working-with-us {
-    background: linear-gradient(45deg, #319a6e, #aad4ff);
-    color: white;
-}
-
-.already-working-with-us a {
-    color: #c3ffc3 !important;
 }
 
 .credits {
