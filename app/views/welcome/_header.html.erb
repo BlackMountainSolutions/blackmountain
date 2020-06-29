@@ -1,13 +1,12 @@
 <section class="section header">
-    <div class="abstract-background"></div>
-    <div class="header-content container align-self-center">
-        <div class="header-vector"></div>
-        <div class="row">
-            <div class="col-12">
-                <h5>Our passion is</h5>
-                <h1>Software<br>development</h1>
-                <h4 class="mt-4">We deliver high quality results on time, no messing around</h4>
-            </div>
+    <div class="header-content container-fluid align-self-center text-center">
+        <h1>Do you want an application?</h1>
+        <h4>
+            Hi, we are a team of freelancers and our mission is to build high quality web applications.<br>
+            Ready to build your idea?
+        </h4>
+        <div class="py-4 contact text-white">
+            <%= render 'contacts/form', contact: @contact, buttonCss: "btn btn-orange btn-lg mt-4 rounded-pill shadow-sm" %>
         </div>
     </div>
 </section>

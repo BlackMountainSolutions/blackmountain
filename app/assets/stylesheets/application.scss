@@ -2,46 +2,29 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     cursor: default;
-    background-color: #fff7fc;
+    background-color: white;
+    color: #43464b;
+    line-height: 32px;
 }
 
 .navbar {
     background-color: #11252c;
 }
 
-.abstract-background {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transform: skewY(-5deg);
-    transform-origin: 0;
-    background: linear-gradient(150deg,#ff5b00 15%,#ffc905 70%,#fff8a6 94%);
-    position: absolute;
-}
-
 .header {
     position: relative;
-    overflow: hidden;
+    color: white;
 }
 
 .header-content {
     position: relative;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    font-size: 24px;
-    color: white;
-}
-
-.header-vector {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    right: -150px;
-    top: -40px;
-    background-image: url('<%= image_path 'icons/header-vector.png' %>');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #43464b;
+    background: linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%), asset_url('header-background-3.jpg');
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
 }
 
 @media (max-width: 1190px) {
@@ -51,9 +34,28 @@ body {
 }
 
 .header-content h1 {
-    font-size: 64px;
+    font-size: 100px;
     font-family: 'Patua One', cursive;
-    line-height: 55px;
+    color: white;
+    text-shadow: 0 2px 5px rgb(44, 44, 44);
+}
+
+.header-content h4 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    text-shadow: 0 2px 3px black;
+}
+
+.header-content .btn-orange {
+    padding: 15px 40px;
+}
+
+.header-content .contact {
+    width: 33%;
+    margin: 0 auto;
 }
 
 @media (max-width: 390px) {
@@ -62,9 +64,15 @@ body {
     }
 }
 
+.section.who-are-we {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .section.what-do-we-do {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
 }
 
 .section.how {
@@ -73,25 +81,26 @@ body {
 }
 
 .title {
-    border-bottom: 5px solid #fe645c;
-    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: inline-block;
+    font-size: 42px;
+
+    &::after {
+        margin-top: 20px;
+        width: 60px;
+        left: 50%;
+        bottom: 0;
+        height: 2px;
+        background: #f16334;
+        content: "";
+        display: block;
+    }
 }
 
 .section.why-us {
-    background-image: url('<%= image_path 'backgrounds/why-us-background.jpg' %>');
-    background-repeat: no-repeat;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;
-    padding: 100px;
-    border-top: 10px solid #ff6c3b;
-    font-size: 28px;
-}
-
-@media (max-width: 500px) {
-    .section.why-us {
-        padding: 50px;
-        font-size: 18px;
-    }
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .section.get-in-touch {
@@ -147,8 +156,8 @@ body {
 
 .btn-orange,
 .btn-orange:hover {
-    background-color: #ff6c3b;
-    border-color: #ff6c3b;
+    background-color: #f16334;
+    border-color: #f16334;
     color: white;
 }
 
@@ -166,7 +175,9 @@ body {
 
 .section.contact-us {
     position: relative;
-    
+    background-color: #f16334;
+    color: white;
+    //text-shadow: 0 0 1px #0084ff;
 }
 
 .section.contact-us .container {
@@ -177,4 +188,22 @@ body {
 .section.contact-us .abstract-background {
     background: linear-gradient(150deg,#dbddf1 15%,#f3dfec 70%,#f5edfb 94%);
     transform: none;
+}
+
+.card {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    border: 0;
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.btn-primary {
+    background-color: #2e2f3e !important;
+    border-color: #2e2f3e !important;
+    color: white !important;
 }
