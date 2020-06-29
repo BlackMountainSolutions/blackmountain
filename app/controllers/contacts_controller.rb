@@ -26,7 +26,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
-      if verify_recaptcha(model: @contact) && @contact.save
+      if @contact.save
         format.html { render :show, notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
         ContactMailer.with(contact: @contact).contact_email.deliver_later
