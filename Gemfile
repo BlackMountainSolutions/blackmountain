@@ -67,3 +67,5 @@ gem 'sitemap_generator'
 gem 'devise'
 
 gem 'meta-tags'
+
+gem 'coffee-rails'
