@@ -1,4 +1,7 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "trix/dist/trix.css";
 @import "./pages.scss";
+@import "./actiontext.scss";
 
 body {
     font-family: 'Nunito', sans-serif;
