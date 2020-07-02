@@ -63,3 +63,7 @@ gem 'secure_headers'
 gem 'rack-attack'
 
 gem 'sitemap_generator'
+
+gem 'devise'
+
+gem 'meta-tags'
