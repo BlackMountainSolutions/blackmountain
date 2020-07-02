@@ -250,3 +250,28 @@ p.lead {
         color: #DD6B20;
     }
 }
+
+.need-help {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eceaea;
+}
+
+.article-link {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #e6dede;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 300ms;
+    text-decoration: none !important;
+
+    p {
+        color: rgb(46, 35, 31);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
