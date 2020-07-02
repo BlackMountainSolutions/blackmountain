@@ -8,6 +8,8 @@ WORKDIR /myapp
 
 COPY Gemfile* ./
 
+RUN gem install bundler
+
 RUN bundle install
 
 COPY . ./
