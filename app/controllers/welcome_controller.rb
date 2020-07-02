@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
       },
       twitter: {
         card: 'summary_large_image',
-        image: view_context.asset_url('header-background-3.jpg'),
+        # image: view_context.asset_url('header-background-3.jpg'),
         creator: '@BlackMountainAR',
         site: '@BlackMountainAR'
       }
