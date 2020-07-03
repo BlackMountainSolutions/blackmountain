@@ -46,4 +46,28 @@ class PagesController < ApplicationController
       }
     )
   end
+
+  def build_ecommerce_app
+    set_meta_tags(
+      title: 'Build your ecommerce application',
+      description: 'We build your ecommerce application in one month.',
+      keywords: 'ecommerce app builder, companies that build apps, app making company',
+      index: true,
+      follow: true,
+      og: {
+        locale: 'en_US',
+        type: 'website',
+        title: 'Build your ecommerce application - BlackMountain',
+        description: 'We build your ecommerce application in one month.',
+        url: 'https://black-mountain.com.ar/build-ecommerce-app',
+        site_name: 'BlackMountain'
+      },
+      twitter: {
+        card: 'summary_large_image',
+        image: view_context.asset_url('header-background-3.jpg'),
+        creator: '@BlackMountainAR',
+        site: '@BlackMountainAR'
+      }
+    )
+  end
 end

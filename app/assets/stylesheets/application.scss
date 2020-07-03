@@ -1,7 +1,9 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "trix/dist/trix.css";
-@import "./pages.scss";
-@import "./actiontext.scss";
+
+@import "pages";
+@import "ecommerce";
+@import "actiontext";
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -10,6 +12,15 @@ body {
     background-color: #f8f8f8;
     color: #43464b;
     line-height: 32px;
+}
+
+a {
+    color: #63bbef;
+    transition: all 200ms ease;
+
+    &:hover {
+        color: #47a4da;
+    }
 }
 
 p.lead {
@@ -37,18 +48,16 @@ p.lead {
 }
 
 .header-content h1 {
-    font-size: 120px;
-    font-family: 'Maven Pro', sans-serif;
+    font-size: 64px;
     color: white;
     text-shadow: 0 2px 5px rgb(27, 27, 27);
 }
 
 .header-content h4 {
     font-size: 24px;
-    font-family: 'Maven Pro', sans-serif;
     line-height: 28px;
     margin-bottom: 25px;
-    color: #d0dce6;
+    color: white;
     text-shadow: 0 2px 3px #07070a;
 }
 
@@ -81,7 +90,8 @@ p.lead {
     }
 }
 
-.header-content .btn-orange {
+.header-content .btn-orange,
+.header-content .btn-white {
     padding: 15px 40px;
 }
 
@@ -186,10 +196,21 @@ p.lead {
     border: 1px solid #f65b81;
 }
 
-.btn-orange,
-.btn-orange:hover {
+.btn-orange {
     background-color: #f16334;
     border-color: #f16334;
+    color: white;
+
+    &:hover {
+        background-color: #ff8055;
+        border-color: #ff8055;
+        color: white;
+    }
+}
+
+.btn-green {
+    background-color: #14cb5d;
+    border-color: #14cb5d;
     color: white;
 }
 
@@ -207,9 +228,8 @@ p.lead {
 
 .section.contact-us {
     position: relative;
-    background-color: #f16334;
+    background: linear-gradient(45deg, #163a46, #286b75);
     color: white;
-    //text-shadow: 0 0 1px #0084ff;
 }
 
 .section.contact-us .container {
@@ -243,10 +263,10 @@ p.lead {
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #e9e5e1;
+    background-color: #10252c;
 
     h6 {
-        color: #5f5852;
+        color: #dbe2eb;
     }
 
     a {
@@ -277,4 +297,18 @@ p.lead {
     &:hover {
         transform: scale(1.05);
     }
+}
+
+.btn-link {
+    color: orange;
+    transition: all 200ms ease;
+
+    &:hover {
+        color: rgb(255, 204, 109);
+    }
+}
+
+.btn-white {
+    background-color: white;
+    color: #e04a18;
 }

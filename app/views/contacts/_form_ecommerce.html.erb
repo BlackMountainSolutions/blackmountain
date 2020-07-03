@@ -1,4 +1,6 @@
 <%= form_with(model: contact, local: true) do |form| %>
+  <%= form.hidden_field :description, value: "ecommerce" %>
+
   <div class="form-group text-left">
     <%= form.label :name, class: "ml-3" %>
     <%= form.text_field :name, class: "border shadow-sm form-control rounded control-lg form-control-lg p-4" %>
@@ -10,6 +12,6 @@
   </div>
 
   <div class="form-group text-center">
-    <%= form.submit "Contact us", class: buttonCss %>
+    <%= form.submit "Contact", class: "btn btn-lg btn-orange px-4 rounded-pill" %>
   </div>
 <% end %>

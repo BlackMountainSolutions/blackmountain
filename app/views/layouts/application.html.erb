@@ -16,7 +16,7 @@
         <meta name="detectify-verification" content="3de98ebd1672a395f8b2a850f508c3ac" />
 
         <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&family=Maven+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&family=Maven+Pro&family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
@@ -45,9 +45,6 @@
                         <li class="nav-item">
                             <%= link_to "Get in touch", welcome_index_path(anchor: "get-in-touch", utm_source: "website", utm_medium: "navbar", utm_campaign: "interaction"), class: "nav-link btn-nav-outline" %>
                         </li>
-                        <li class="nav-item">
-                            <a href="https://dashboard.black-mountain.com.ar/?utm_source=website&utm_medium=navbar&utm_campaign=interaction" class="nav-link btn-sm btn-orange rounded-pill">Client Dashboard</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,14 +53,17 @@
         <section class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 text-center mb-5">
-                        <%= image_tag "icons/icon-blackmountain-64.png" %>
+                    <div class="col-sm-4 col-md-6 text-center mb-4">
+                        <%= image_tag "logo-alt.png", style: "width: 256px; margin-top: -25px" %>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-3">
                         <h6 class="font-weight-bold">COMPANY</h6>
                         <ul class="list-unstyled">
                             <li class="py-2">
                                 <%= link_to "Our services", welcome_index_path(anchor: "what-do-we-do", utm_source: "website", utm_medium: "footer", utm_campaign: "interaction") %>
+                            </li>
+                            <li class="py-2">
+                                <%= link_to "Build e-commerce application", build_ecommerce_app_path(utm_source: "website", utm_medium: "footer", utm_campaign: "ecommerce") %>
                             </li>
                             <li class="py-2">
                                 <%= link_to "Why working with us?", welcome_index_path(anchor: "why-us", utm_source: "website", utm_medium: "footer", utm_campaign: "interaction") %>
@@ -76,7 +76,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-3">
                         <h6 class="font-weight-bold">SOCIAL MEDIA</h6>
                         <ul class="list-unstyled">
                             <li class="py-2">

@@ -1,17 +1,12 @@
 <section class="section header">
     <div class="header-content container-fluid align-self-center text-center">
-        <h1>We build applications</h1>
+        <h1>Web application development</h1>
         <h4>
             Our mission is to build high quality web applications. Ready to build your idea?
         </h4>
-        <div class="py-4 contact text-white">
-            <%= render 'contacts/form', contact: @contact, buttonCss: "btn btn-orange font-weight-bold text-uppercase mt-4 rounded-pill shadow-sm" %>
-        </div>
-        <div class="tip">
-            <h5>Pro Tip</h5>
-            <div class="content">
-                If you are looking to build your very first application, we recommend you to <%= link_to "build an MVP", what_is_mvp_path %>.
-            </div>
-        </div>
+        <%= link_to "Build e-commerce application", build_ecommerce_app_path, class: "mb-4 zoom-animation btn btn-orange btn-lg rounded-0 mx-2" %>
+        <%= link_to "Build custom application", "#get-in-touch", class: "mb-4 zoom-animation btn btn-white btn-lg rounded-0 mx-2" %>
+        <p class="text-white lead mb-2"><b>Don't know where to begin?</b> Maybe <%= link_to "some of our suggestions", building_an_application_path, class: "btn-link" %> can help you.</p>
+        <p class="text-white lead mb-2"><b>Already have an idea in mind?</b> Learn <%= link_to "how to validate it", what_is_mvp_path, class: "btn-link" %>.</p>
     </div>
 </section>

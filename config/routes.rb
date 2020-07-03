@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/', as: 'welcome_index', to: 'welcome#index'
   get '/what-is-an-mvp', as: 'what_is_mvp', to: 'pages#what_is_an_mvp'
   get '/where-to-begin-when-building-an-application', as: 'building_an_application', to: 'pages#building_an_application_where_to_begin'
+  get '/build-ecommerce-app', as: 'build_ecommerce_app', to: 'pages#build_ecommerce_app'
   root 'welcome#index'
 end

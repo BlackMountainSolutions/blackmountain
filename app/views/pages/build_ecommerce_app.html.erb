@@ -1,0 +1,182 @@
+<div class="ecommerce">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="title">Your ecommerce application in 1 month</h1>
+                    <h3>Let's <b>build your custom e-commerce application</b> in just one month and little to no effort.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="big text-center">
+            <%= image_tag 'time-is-money.png', class: "img-fluid mb-4", style: "width: 600px" %>
+            <p>
+                We know <b>time is money</b>, so we have come up with a way to optimize resources and be as efficient as possible for <b>building an e-commerce application without sacrificing customization</b>.
+            </p>
+        </div>
+    </div>
+
+    <section class="steps-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="title"><b>Only four steps</b> to building your e-commerce</h2>
+            </div>
+            <div class="card my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <%= image_tag 'ecommerce-planning.jpg', class: "img-fluid border rounded shadow-sm" %>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>#1 Planning</h3>
+                        <p class="lead">
+                            We spend one-week planning and gathering all the details and requirements with you. We make sure no feature is missing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>#2 Design and styles</h3>
+                        <p class="lead">
+                            Define and choose your style. We have come up with a custom palette of colors and designs to make styling just a breeze.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <%= image_tag 'ecommerce-design.jpg', class: "img-fluid border rounded shadow-sm" %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <%= image_tag 'ecommerce-implementation.jpg', class: "img-fluid border rounded shadow-sm" %>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>#3 Implementation</h3>
+                        <p class="lead">
+                            Once we have all the requirements and stylings, we start to work on them, making your idea a reality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>#4 Shipping!</h3>
+                        <p class="lead">
+                            That's it! Let your users enjoy your application.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <%= image_tag 'ecommerce-shipping.jpg', class: "img-fluid border rounded shadow-sm" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="title">Pricing</h2>
+                <p class="lead">
+                    We hate confusing pricing and small letter.<br>
+                    <b>Our pricing is clear and straightforward</b>, just like our development process.
+                </p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="pricing">
+                        <%= image_tag 'ecommerce-pricing.png', class: "img-fluid" %>
+                        <div class="price">$1999 USD</div>
+                        <div class="feature highlight">One time payment</div>
+                        <div class="feature">Styles & designs</div>
+                        <div class="feature">Application ready to be used</div>
+                        <%= link_to "Count me in!", "#contact", class: "buy" %>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>What does it include?</h3>
+                    <p class="lead py-4 border-bottom">
+                        20 hours of project planning<br>
+                        <small>
+                            Define the work, compare against competition, and make sure your project starts on the right foot.
+                        </small>
+                    </p>
+                    <p class="lead py-4 border-bottom">
+                        20 hours of design and styles planning<br>
+                        <small>
+                            Choose between our color palettes or even define your own. This is the time to be creative!
+                        </small>
+                    </p>
+                    <p class="lead py-4 border-bottom">
+                        40 hours of implementation<br>
+                        <small>
+                            Start with implementations.
+                        </small>
+                    </p>
+                    <p class="lead py-4 border-bottom">
+                        20 hours of testing and tweaking<br>
+                        <small>
+                            Make sure everything works as expected and polishing the last details.
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row my-4 py-4" id="contact">
+                <div class="col-lg-6">
+                    <h3 class="title">Sounds good?</h3>
+                    <p class="lead">Drop us a line and will reach out to you ASAP</p>
+                </div>
+                <div class="col-lg-6">
+                    <%= render 'contacts/form_ecommerce', contact: Contact.new %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions-section">
+        <div class="container">
+            <h2 class="title">Questions</h2>
+            <div class="my-4 py-4">
+                <h3>Can I pay with credit card?</h3>
+                <p class="lead">
+                    Absolutely! We offer Paypal as a billing option.
+                </p>
+            </div>
+            <div class="my-4 py-4">
+                <h3>Will the e-comerce be deployed and ready to be used?</h3>
+                <p class="lead">
+                    Yes, the application will be fully deployed and configured. Ready for you and your users to start using it.
+                </p>
+            </div>
+            <div class="my-4 py-4">
+                <h3>Does it include hosting and/or domain?</h3>
+                <p class="lead">
+                    No, you will be responsible for hosting and domain. We do not offer hosting or domain services. We develop the application using AWS Amplify, a rock-solid service solution by Amazon.
+                </p>
+            </div>
+            <div class="my-4 py-4">
+                <h3>What about support?</h3>
+                <p class="lead">
+                    We do offer support outside of the 1999 USD price, costing 50 USD per working hour. If you consider you will need assistance, please let us know upfront since we offer a 20% discount.
+                </p>
+            </div>
+            <div class="my-4 py-4">
+                <h3>I still got questions</h3>
+                <p class="lead">
+                    That's is all right, please write to us at <a href="mailto:contact@black-mountain.com.ar">contact@black-mountain.com.ar</a>. We would be more than happy to address any questions or concerns you may have.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
