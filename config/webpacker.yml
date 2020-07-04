@@ -51,6 +51,7 @@ development:
   <<: *default
   compile: false
   extract_css: true
+  cache_manifest: true
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:

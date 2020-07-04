@@ -15,4 +15,4 @@ RUN mkdir -p /var/www/myapp
 WORKDIR /var/www/myapp
 COPY . ./
 
-RUN bundle exec rails assets:precompile
+# RUN bundle exec rails assets:precompile
