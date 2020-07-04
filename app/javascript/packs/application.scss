@@ -1,0 +1,314 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "trix/dist/trix.css";
+
+@import "../stylesheets/pages";
+@import "../stylesheets/ecommerce";
+@import "../stylesheets/actiontext";
+
+body {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    cursor: default;
+    background-color: #f8f8f8;
+    color: #43464b;
+    line-height: 32px;
+}
+
+a {
+    color: #63bbef;
+    transition: all 200ms ease;
+
+    &:hover {
+        color: #47a4da;
+    }
+}
+
+p.lead {
+    line-height: 32px;
+}
+
+.navbar {
+    background-color: #11252c;
+}
+
+.header {
+    position: relative;
+    color: white;
+}
+
+.header-content {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #43464b;
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7)100%), url('../images/header-background-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-content h1 {
+    font-size: 64px;
+    color: white;
+    text-shadow: 0 2px 5px rgb(27, 27, 27);
+}
+
+.header-content h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    color: white;
+    text-shadow: 0 2px 3px #07070a;
+}
+
+.header-content .form-control {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgb(19, 20, 22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.75) !important;
+}
+
+.header .tip {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    h5 {
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 2px 5px black;
+    }
+    .content {
+        color: rgb(230, 220, 220);
+        background-color: #0000009f;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 18px;
+
+        a {
+            color: rgb(73, 197, 255);
+        }
+    }
+}
+
+.header-content .btn-orange,
+.header-content .btn-white {
+    padding: 15px 40px;
+}
+
+.header-content .contact {
+    width: 33%;
+    margin: 0 auto;
+}
+
+@media (max-width: 390px) {
+    .header-content h1 {
+        font-size: 48px;
+    }
+}
+
+.section.who-are-we {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section.what-do-we-do {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eceaea;
+}
+
+.section.how {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: inline-block;
+    font-size: 42px;
+
+    &::after {
+        margin-top: 20px;
+        width: 60px;
+        left: 50%;
+        bottom: 0;
+        height: 2px;
+        background: #f16334;
+        content: "";
+        display: block;
+    }
+}
+
+.section.why-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section.get-in-touch {
+    font-size: 14px;
+    border-top: 1px solid #d2d8e2;
+    background: #fff;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section.get-in-touch i {
+    margin-right: 10px;
+    color: #d2d8e2;
+}
+
+.section.get-in-touch a {
+    color: #112e54;
+}
+
+.what-do-we-do-icon {
+    background-color: #dcf9ff;
+}
+
+.btn-nav-outline {
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 8px;
+    transition: border-color ease-in 150ms;
+    font-size: 14px;
+}
+
+.btn-nav-outline.active,
+.btn-nav-outline:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-bottom-color: #fe645c;
+}
+
+.zoom-animation {
+    transition: all ease-in 125ms;
+}
+
+.zoom-animation:hover {
+    transform: scale(1.03);
+}
+
+.field_with_errors > .form-control {
+    border: 1px solid #f65b81;
+}
+
+.btn-orange {
+    background-color: #f16334;
+    border-color: #f16334;
+    color: white;
+
+    &:hover {
+        background-color: #ff8055;
+        border-color: #ff8055;
+        color: white;
+    }
+}
+
+.btn-green {
+    background-color: #14cb5d;
+    border-color: #14cb5d;
+    color: white;
+}
+
+.credits {
+    color: #d2d8e2;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.credits a {
+    color: #bcbdc3 !important;
+}
+
+.section.contact-us {
+    position: relative;
+    background: linear-gradient(45deg, #163a46, #286b75);
+    color: white;
+}
+
+.section.contact-us .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section.contact-us .abstract-background {
+    background: linear-gradient(150deg,#dbddf1 15%,#f3dfec 70%,#f5edfb 94%);
+    transform: none;
+}
+
+.card {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    border: 0;
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.btn-primary {
+    background-color: #2e2f3e !important;
+    border-color: #2e2f3e !important;
+    color: white !important;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #10252c;
+
+    h6 {
+        color: #dbe2eb;
+    }
+
+    a {
+        color: #DD6B20;
+    }
+}
+
+.need-help {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eceaea;
+}
+
+.article-link {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #e6dede;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 300ms;
+    text-decoration: none !important;
+
+    p {
+        color: rgb(46, 35, 31);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.btn-link {
+    color: orange;
+    transition: all 200ms ease;
+
+    &:hover {
+        color: rgb(255, 204, 109);
+    }
+}
+
+.btn-white {
+    background-color: white;
+    color: #e04a18;
+}

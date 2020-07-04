@@ -23,13 +23,13 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <%= display_meta_tags site: 'BlackMountain' %>
-        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_pack_tag 'application' %>
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="100">
         <nav id="navbar" class="navbar">
             <div class="container">
                 <a class="navbar-brand mx-auto" href="/">
-                    <%= image_tag "logo-alt.png", height: "18" %>
+                    <%= image_pack_tag "logo-alt.png", height: "18" %>
                 </a>
                 <div class="d-none mx-auto d-sm-block font-weight-bold">
                     <ul class="nav justify-content-end align-items-center">
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-md-6 text-center mb-4">
-                        <%= image_tag "logo-alt.png", style: "width: 256px; margin-top: -25px" %>
+                        <%= image_pack_tag "logo-alt.png", style: "width: 256px; margin-top: -25px" %>
                     </div>
                     <div class="col-12 col-md-3">
                         <h6 class="font-weight-bold">COMPANY</h6>

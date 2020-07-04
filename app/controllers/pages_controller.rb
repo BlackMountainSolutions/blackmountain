@@ -16,7 +16,7 @@ class PagesController < ApplicationController
       },
       twitter: {
         card: 'summary_large_image',
-        image: view_context.asset_url('header-background-3.jpg'),
+        image: view_context.asset_pack_path('media/images/header-background-3.jpg'),
         creator: '@BlackMountainAR',
         site: '@BlackMountainAR'
       }
@@ -40,7 +40,7 @@ class PagesController < ApplicationController
       },
       twitter: {
         card: 'summary_large_image',
-        image: view_context.asset_url('header-background-3.jpg'),
+        image: view_context.asset_pack_path('media/images/header-background-3.jpg'),
         creator: '@BlackMountainAR',
         site: '@BlackMountainAR'
       }
@@ -64,7 +64,7 @@ class PagesController < ApplicationController
       },
       twitter: {
         card: 'summary_large_image',
-        image: view_context.asset_url('header-background-3.jpg'),
+        image: view_context.asset_pack_path('media/images/header-background-3.jpg'),
         creator: '@BlackMountainAR',
         site: '@BlackMountainAR'
       }
